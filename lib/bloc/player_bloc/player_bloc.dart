@@ -1,5 +1,4 @@
 import 'dart:async';
-
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
@@ -97,7 +96,7 @@ class PlayerBloc extends Bloc<PlayerEvent, PlayerState> {
                   fontSize: 12),
             ),
             content: const Text(
-              'This soong is already in favourite list, are you sure to delete it',
+              'This song is already in favorite list, are you sure to delete it',
               style: TextStyle(
                 color: Colors.black,
                 fontSize: 10,
@@ -107,7 +106,7 @@ class PlayerBloc extends Bloc<PlayerEvent, PlayerState> {
               InkWell(
                   onTap: () => Navigator.pop(context),
                   child: const Text(
-                    'Cancle',
+                    'Cancel',
                     style: TextStyle(fontSize: 12, color: Colors.black),
                   )),
               const SizedBox(

@@ -20,9 +20,10 @@ class HomeIntroBox extends StatelessWidget {
           color: backgroundColor,
           borderRadius: BorderRadius.circular(10),
           boxShadow: [
-            BoxShadow(color: shadowColor, offset: const Offset(8, 6), blurRadius: 12),
+            BoxShadow(
+                color: shadowColor, offset: const Offset(8, 6), blurRadius: 12),
             const BoxShadow(
-                color: Colors.white, offset:  Offset(-8, -6), blurRadius: 12),
+                color: Colors.white, offset: Offset(-8, -6), blurRadius: 12),
           ],
         ),
         child: Stack(
@@ -31,7 +32,7 @@ class HomeIntroBox extends StatelessWidget {
             ClipRRect(
                 borderRadius: BorderRadius.circular(10),
                 child: Image.asset(
-                  AppImages.imageList[11]!,
+                  AppImages.imageList[1]!,
                   fit: BoxFit.cover,
                 )),
             Padding(
@@ -42,27 +43,11 @@ class HomeIntroBox extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                      Container(
-                        height: 30,
-                        width: 80,
-                        decoration: BoxDecoration(
-                          color: Colors.black38,
-                          borderRadius: BorderRadius.circular(20),
-                          border: Border.all(
-                            color: Colors.white70,
-                          ),
-                        ),
-                        alignment: Alignment.center,
-                        child: const Text(
-                          'See Recently',
-                          style: TextStyle(color: Colors.white, fontSize: 8),
-                        ),
-                      ),
                       const SizedBox(
                         height: 5,
                       ),
                       const Text(
-                        'Sweet Melody',
+                        'MUSIC MANIA',
                         style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
@@ -75,14 +60,14 @@ class HomeIntroBox extends StatelessWidget {
                         // crossAxisAlignment: CrossAxisAlignment.end,
                         children: [
                           Text(
-                            'Little Mix  ',
+                            'Lets Explore',
                             style: TextStyle(
                                 color: Colors.white70,
                                 fontWeight: FontWeight.bold,
                                 fontSize: 12),
                           ),
                           Text(
-                            '2033533 Listeners',
+                            '',
                             style: TextStyle(
                                 color: Colors.white70,
                                 fontWeight: FontWeight.bold,
@@ -112,17 +97,24 @@ class HomeIntroBox extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.center,
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
-                              const Text('Listen',style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 12
-                              ),),
-                              const SizedBox(width: 10,),
+                              const Text(
+                                'Listen',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 12),
+                              ),
+                              const SizedBox(
+                                width: 10,
+                              ),
                               CircleAvatar(
                                 radius: 11,
                                 backgroundColor: Colors.white,
                                 child: Center(
-                                  child: SvgPicture.asset(AppSvg.play,color: Colors.grey,),
+                                  child: SvgPicture.asset(
+                                    AppSvg.play,
+                                    color: Colors.grey,
+                                  ),
                                 ),
                               )
                             ],
