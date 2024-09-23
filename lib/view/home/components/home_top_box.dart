@@ -32,7 +32,7 @@ class HomeIntroBox extends StatelessWidget {
             ClipRRect(
                 borderRadius: BorderRadius.circular(10),
                 child: Image.asset(
-                  AppImages.imageList[1]!,
+                  AppImages.imageList[11]!,
                   fit: BoxFit.cover,
                 )),
             Padding(
@@ -43,11 +43,27 @@ class HomeIntroBox extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
+                      Container(
+                        height: 30,
+                        width: 80,
+                        decoration: BoxDecoration(
+                          color: Colors.black38,
+                          borderRadius: BorderRadius.circular(20),
+                          border: Border.all(
+                            color: Colors.white70,
+                          ),
+                        ),
+                        alignment: Alignment.center,
+                        child: const Text(
+                          'See Recently',
+                          style: TextStyle(color: Colors.white, fontSize: 8),
+                        ),
+                      ),
                       const SizedBox(
                         height: 5,
                       ),
                       const Text(
-                        'MUSIC MANIA',
+                        'Sweet Melody',
                         style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
@@ -60,14 +76,14 @@ class HomeIntroBox extends StatelessWidget {
                         // crossAxisAlignment: CrossAxisAlignment.end,
                         children: [
                           Text(
-                            'Lets Explore',
+                            'Little Mix  ',
                             style: TextStyle(
                                 color: Colors.white70,
                                 fontWeight: FontWeight.bold,
                                 fontSize: 12),
                           ),
                           Text(
-                            '',
+                            '2033533 Listeners',
                             style: TextStyle(
                                 color: Colors.white70,
                                 fontWeight: FontWeight.bold,

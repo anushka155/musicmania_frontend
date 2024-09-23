@@ -1,5 +1,5 @@
 class AppImages {
-  static const imageList={
+  static const imageList = {
     0: 'assets/images/1.png',
     1: 'assets/images/2.png',
     2: 'assets/images/3.png',
